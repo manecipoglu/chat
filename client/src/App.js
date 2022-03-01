@@ -1,10 +1,12 @@
+import { useState } from "react";
 import Login from "./components/Login/Login";
 import "./App.scss";
 
 function App() {
+  const [id, setId] = useState("");
   return (
     <div>
-      <Login />
+      <Login setId={setId} />
     </div>
   );
 }

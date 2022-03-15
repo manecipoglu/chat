@@ -47,8 +47,8 @@ export function ConversationsProvider({ children, id }) {
     });
   }
 
-  function sendMessage(recepients, text) {
-    addMessageToConversation({ recepients, text, sender: id });
+  function sendMessage(recipients, text) {
+    addMessageToConversation({ recipients, text, sender: id });
   }
 
   const formattedConversations = conversations.map((conversation, index) => {

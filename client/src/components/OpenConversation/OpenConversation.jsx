@@ -5,6 +5,7 @@ import "./OpenConversation.scss";
 export default function OpenConvversation() {
   const [text, setText] = useState("");
   const { sendMessage, selectedConversation } = useConversations();
+
   const setLastMessageRef = useCallback((node) => {
     if (node) {
       node.scrollIntoView({ smooth: true });
